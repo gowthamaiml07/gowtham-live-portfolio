@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gowtham-portfolio.example.com/sitemap.xml

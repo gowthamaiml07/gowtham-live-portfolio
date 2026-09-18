@@ -1,0 +1,20 @@
+# Secrets — never commit these
+.env
+.env.local
+.env.*.local
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+out/
+
+# Platform-local directories
+.netlify/
+.vercel/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*

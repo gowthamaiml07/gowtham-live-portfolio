@@ -1,0 +1,15 @@
+{
+  "name": "gowtham-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI/ML Engineer portfolio for Gowtham B with a real serverless email contact form.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "license": "UNLICENSED"
+}

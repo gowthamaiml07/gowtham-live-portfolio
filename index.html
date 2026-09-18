@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gowtham B — AI/ML Engineer | Computer Vision &amp; Deep Learning</title>
+  <meta name="description" content="Portfolio of Gowtham B — AI/ML Engineer specializing in Computer Vision, Deep Learning, and real-time AI systems. B.E. CSE (AIML) at Velalar College of Engineering and Technology, ML Intern at Prinston Smart Engineers, 1st Prize at IDE Bootcamp 2025." />
+  <meta name="keywords" content="Gowtham B, AI Engineer, ML Developer, Computer Vision, Deep Learning, Machine Learning, TensorFlow, OpenCV, Python, Portfolio" />
+  <meta name="author" content="Gowtham B" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gowtham B — AI/ML Engineer | Computer Vision &amp; Deep Learning" />
+  <meta property="og:description" content="AI/ML Engineer specializing in Computer Vision, Deep Learning, and real-time AI systems." />
+  <meta property="og:url" content="https://gowtham-portfolio.example.com" />
+  <meta property="og:site_name" content="Gowtham B — Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gowtham B — AI/ML Engineer | Computer Vision &amp; Deep Learning" />
+  <meta name="twitter:description" content="AI/ML Engineer specializing in Computer Vision, Deep Learning, and real-time AI systems." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://gowtham-portfolio.example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gowtham B",
+    "jobTitle": "AI/ML Engineer",
+    "url": "https://gowtham-portfolio.example.com",
+    "email": "mailto:gowtham.aiml07@gmail.com",
+    "sameAs": [
+      "https://github.com/gowthamaiml07",
+      "https://linkedin.com/in/gowtham-b-4bb5b8290"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Velalar College of Engineering and Technology"
+    },
+    "knowsAbout": ["Machine Learning", "Computer Vision", "Deep Learning", "Neural Networks", "TensorFlow", "OpenCV", "Python", "Data Analysis"]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              violet: '#8B5CF6',
+              purple: '#A855F7',
+              dark: '#050508',
+              card: 'rgba(255, 255, 255, 0.03)',
+              border: 'rgba(139, 92, 246, 0.2)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #000000; }
+    ::-webkit-scrollbar-thumb { background: rgba(139, 92, 246, 0.35); border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(139, 92, 246, 0.6); }
+
+    /* Glass Card */
+    .glass-card {
+      background: rgba(12, 10, 22, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(168, 85, 247, 0.4);
+      box-shadow: 0 8px 32px -8px rgba(139, 92, 246, 0.25);
+    }
+
+    /* Gradient Text */
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 25%, #c084fc 65%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-purple {
+      background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Scroll Progress Bar */
+    #scrollProgress {
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.1s linear;
+    }
+
+    /* Skip-to-content */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      z-index: 9999;
+      padding: 8px 16px;
+      background: #7c3aed;
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: top 0.2s;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    /* Active Nav Indicator */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #a855f7;
+      transition: width 0.25s, left 0.25s;
+      border-radius: 1px;
+    }
+    .nav-link.active::after {
+      width: 100%;
+      left: 0;
+    }
+    .nav-link.active {
+      color: #c084fc;
+    }
+
+    /* Mobile Menu Animation */
+    #mobileMenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s, padding 0.25s;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    #mobileMenu.open {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    /* Pipeline Flow Animation */
+    .pipeline-step {
+      position: relative;
+    }
+    .pipeline-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      width: 24px;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(139,92,246,0.5), rgba(139,92,246,0.15));
+    }
+
+    /* Focus Visible for Keyboard */
+    :focus-visible {
+      outline: 2px solid #a855f7;
+      outline-offset: 2px;
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    /* Contact form: honeypot field (invisible to humans, filled by bots) */
+    .contact-honeypot {
+      position: absolute !important;
+      left: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      pointer-events: none !important;
+    }
+    /* Invalid input highlight driven by JS */
+    .input-invalid {
+      border-color: rgba(248, 113, 113, 0.6) !important;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-gray-200 font-sans selection:bg-purple-600 selection:text-white antialiased min-h-screen relative overflow-x-hidden">
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="fixed top-0 left-0 w-full h-[2px] bg-gradient-to-r from-purple-500 via-violet-400 to-indigo-500 z-50" aria-hidden="true"></div>
+
+  <!-- Background -->
+  <div class="fixed inset-0 pointer-events-none z-0" style="background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(139, 92, 246, 0.18), transparent 65%), #000000;" aria-hidden="true"></div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-purple-950/90 border border-purple-500/40 backdrop-blur-xl text-white text-sm shadow-2xl" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- Content Wrapper -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-black/60 border-b border-purple-900/20">
+      <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="#hero" class="flex items-center gap-2.5 group" aria-label="Gowtham B - Home">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-purple-500/15 group-hover:scale-105 transition-transform">G</div>
+          <div class="hidden sm:block">
+            <span class="text-sm font-bold tracking-tight text-white block leading-tight">Gowtham B</span>
+            <span class="text-[10px] text-purple-400 font-medium">AI/ML Engineer</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-[13px] font-medium text-gray-400" aria-label="Main navigation">
+          <a href="#about" class="nav-link hover:text-white transition-colors">About</a>
+          <a href="#projects" class="nav-link hover:text-white transition-colors">Projects</a>
+          <a href="#skills" class="nav-link hover:text-white transition-colors">Skills</a>
+          <a href="#experience" class="nav-link hover:text-white transition-colors">Experience</a>
+          <a href="#education" class="nav-link hover:text-white transition-colors">Education</a>
+          <a href="#certifications" class="nav-link hover:text-white transition-colors">Certifications</a>
+          <a href="#contact" class="nav-link hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-2.5">
+          <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" title="GitHub" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github text-sm"></i>
+          </a>
+          <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" title="LinkedIn" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="gowtham_resume.pdf" download="Gowtham's CV.pdf" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg border border-purple-500/40 bg-purple-950/40 hover:bg-purple-600 text-purple-200 hover:text-white text-xs font-semibold shadow-lg transition-all flex items-center gap-1.5" title="Download Gowtham's Resume (PDF)">
+            <i class="fa-solid fa-download text-[11px]"></i> Download CV
+          </a>
+          <a href="#contact" class="ml-1 px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold shadow-lg shadow-purple-600/25 transition-all">Get in Touch</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="mobileMenuBtn" class="lg:hidden text-gray-300 hover:text-white p-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars text-base"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="lg:hidden border-b border-purple-900/20 bg-black/95 px-5" role="navigation" aria-label="Mobile navigation">
+        <nav class="flex flex-col gap-1 text-sm font-medium">
+          <a href="#about" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">About</a>
+          <a href="#projects" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Projects</a>
+          <a href="#skills" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Skills</a>
+          <a href="#experience" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Experience</a>
+          <a href="#education" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Education</a>
+          <a href="#certifications" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Certifications</a>
+          <a href="#contact" class="mobile-nav-link text-gray-300 hover:text-purple-400 py-2.5 rounded-lg hover:bg-white/5 px-3 transition-all">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3 mt-3 pb-2 border-t border-purple-900/20 pt-3">
+          <a href="gowtham_resume.pdf" download="Gowtham's CV.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold text-center flex items-center justify-center gap-1.5 transition-all">
+            <i class="fa-solid fa-download text-xs"></i> Download CV
+          </a>
+          <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 transition-all" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 transition-all" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content">
+
+      <!-- ================= HERO ================= -->
+      <section id="hero" class="max-w-6xl mx-auto px-5 pt-16 pb-20 md:pt-24 md:pb-28">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+          <!-- Left: Bio -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/25 bg-purple-950/30 text-purple-300 text-xs font-semibold tracking-wide">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+              Available for AI/ML roles &amp; internships
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.1]">
+              Learning, Building &amp;<br />
+              <span class="gradient-text">Exploring AI and</span><br />
+              Machine Learning
+            </h1>
+
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xl">
+              AI/ML engineer specializing in Computer Vision, Deep Learning, and real-time AI systems. Currently pursuing <strong class="text-white font-semibold">B.E. CSE (AIML)</strong> at Velalar College of Engineering and Technology, with hands-on experience in machine learning, neural networks, and data analysis.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <a href="gowtham_resume.pdf" download="Gowtham's CV.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-xl shadow-purple-600/25 hover:shadow-purple-500/40 transition-all flex items-center gap-2" id="downloadCvBtn">
+                <i class="fa-solid fa-file-arrow-down text-xs"></i> Download CV / Resume
+              </a>
+              <a href="#projects" class="px-5 py-3 rounded-xl glass-card hover:bg-purple-900/20 text-gray-300 hover:text-white text-sm font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-code-branch text-xs text-purple-400"></i> View Projects
+              </a>
+              <button onclick="copyEmail()" class="px-4 py-3 rounded-xl glass-card hover:bg-purple-900/20 text-gray-300 hover:text-white text-sm font-semibold flex items-center gap-2" aria-label="Copy email address">
+                <i class="fa-regular fa-copy text-purple-400"></i>
+                <span id="copyBtnText">Copy Email</span>
+              </button>
+              <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+            <div class="pt-4 border-t border-purple-900/15 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-gray-500">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-purple-400/70"></i>
+                <span class="truncate">gowtham.aiml07@gmail.com</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone text-purple-400/70"></i>
+                <span>+91 7092882250</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-purple-400/70"></i>
+                <span>Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Profile Card -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative group">
+              <div class="absolute -inset-2 bg-gradient-to-tr from-purple-600/30 via-indigo-600/20 to-pink-600/20 rounded-3xl blur-xl opacity-40 group-hover:opacity-70 transition duration-700" aria-hidden="true"></div>
+              <div class="relative w-72 h-[400px] rounded-[24px] overflow-hidden border border-purple-500/20 bg-gradient-to-b from-purple-900/10 to-black/80 p-1.5 shadow-2xl">
+                <div class="w-full h-full rounded-[20px] overflow-hidden relative bg-zinc-900/80">
+                  <img src="profile.webp" alt="Gowtham B" width="288" height="400" class="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700" loading="eager" decoding="async" onerror="if(!this.dataset.fallback){this.dataset.fallback='jpg';this.src='profile.jpg';}else{this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22500%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23101018%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%238b5cf6%22 font-family=%22sans-serif%22 font-size=%2248%22%3EGB%3C/text%3E%3C/svg%3E';}" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" aria-hidden="true"></div>
+
+                  <!-- Badge -->
+                  <div class="absolute top-3 left-3">
+                    <span class="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-purple-400/20 text-[10px] font-semibold text-purple-300 flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" aria-hidden="true"></span>
+                      IDE Bootcamp '25 Winner
+                    </span>
+                  </div>
+
+                  <!-- Bottom Info -->
+                  <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/60 backdrop-blur-md border border-white/5 text-left space-y-1">
+                    <div class="flex items-center justify-between">
+                      <h2 class="text-sm font-bold text-white">Gowtham B</h2>
+                      <div class="flex gap-1.5">
+                        <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-md bg-purple-600/30 hover:bg-purple-600 flex items-center justify-center text-white text-[10px] transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-md bg-zinc-800/80 hover:bg-zinc-700 flex items-center justify-center text-white text-[10px] transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                      </div>
+                    </div>
+                    <p class="text-[10px] text-purple-300/80">CSE (AIML) Undergrad &bull; AI/ML Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-user"></i> About Me
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-8">Who I Am</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div class="reveal space-y-4 text-sm text-gray-400 leading-relaxed">
+            <p>
+              I’m an aspiring AI/ML engineer currently pursuing my B.E. in CSE (AIML) at Velalar College of Engineering and Technology, Erode. I’m passionate about applying Python, Artificial Intelligence, Machine Learning, Computer Vision, and real-time AI systems to solve real-world problems.
+            </p>
+            <p>
+              My project experience includes an AI-based hospital resource prediction and ambulance route optimization system, an AI-powered fake detection system, and a real-time drowsiness detection system, with measurable results across these projects.
+            </p>
+            <p>
+              I’ve gained hands-on industry experience as a Machine Learning Intern at Prinston Smart Engineers and secured 1st Prize at the national-level IDE Bootcamp 2025 organized by AICTE &amp; MIC. I’m currently seeking AI/ML job opportunities where I can apply my skills, contribute to real-world projects, and continue growing as an AI/ML engineer.
+            </p>
+          </div>
+          <div class="reveal grid grid-cols-2 gap-4">
+            <div class="glass-card p-5 rounded-2xl space-y-2">
+              <div class="w-9 h-9 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400 text-sm"><i class="fa-solid fa-eye"></i></div>
+              <h3 class="text-sm font-bold text-white">Computer Vision</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Real-time detection, object &amp; image analysis with OpenCV</p>
+            </div>
+            <div class="glass-card p-5 rounded-2xl space-y-2">
+              <div class="w-9 h-9 rounded-lg bg-indigo-500/15 flex items-center justify-center text-indigo-400 text-sm"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="text-sm font-bold text-white">Deep Learning</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Neural networks, CNN architectures, TensorFlow &amp; PyTorch</p>
+            </div>
+            <div class="glass-card p-5 rounded-2xl space-y-2">
+              <div class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 text-sm"><i class="fa-solid fa-chart-line"></i></div>
+              <h3 class="text-sm font-bold text-white">Machine Learning</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Supervised &amp; unsupervised learning, classification, regression</p>
+            </div>
+            <div class="glass-card p-5 rounded-2xl space-y-2">
+              <div class="w-9 h-9 rounded-lg bg-pink-500/15 flex items-center justify-center text-pink-400 text-sm"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="text-sm font-bold text-white">Real-Time AI Systems</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Intelligent prediction, real-world AI workflows, model evaluation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HIGHLIGHTS ================= -->
+      <section id="highlights" class="max-w-6xl mx-auto px-5 py-12">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-white">95%</div>
+            <p class="text-xs text-purple-300 font-semibold">Prediction Accuracy</p>
+          </div>
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-white">30%</div>
+            <p class="text-xs text-purple-300 font-semibold">Reduced Emergency Response</p>
+          </div>
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-white">98%</div>
+            <p class="text-xs text-purple-300 font-semibold">Fake Detection Accuracy</p>
+          </div>
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-white">98%</div>
+            <p class="text-xs text-purple-300 font-semibold">Drowsiness Detection Rate</p>
+          </div>
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-white">3+</div>
+            <p class="text-xs text-purple-300 font-semibold">Real-World Datasets Evaluated</p>
+          </div>
+          <div class="reveal glass-card p-5 rounded-2xl text-center space-y-1">
+            <div class="text-3xl font-extrabold text-amber-400">1st</div>
+            <p class="text-xs text-purple-300 font-semibold">Prize — IDE Bootcamp 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section id="projects" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal flex flex-col md:flex-row md:items-end justify-between mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-diagram-project"></i> Works
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects</h2>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-4 md:mt-0" role="tablist" aria-label="Filter projects">
+            <button onclick="filterProjects('all')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-purple-600 text-white transition-all" data-cat="all" role="tab" aria-selected="true">All</button>
+            <button onclick="filterProjects('multimodal')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all" data-cat="multimodal" role="tab" aria-selected="false">Multi-Modal &amp; RAG</button>
+            <button onclick="filterProjects('cv')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all" data-cat="cv" role="tab" aria-selected="false">Computer Vision</button>
+            <button onclick="filterProjects('ml')" class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all" data-cat="ml" role="tab" aria-selected="false">Healthcare &amp; ML</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projectGrid">
+
+          <!-- Project 1: Hospital Resource -->
+          <div class="reveal project-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" data-category="ml" onclick="openProjectModal('project1')" role="button" tabindex="0" aria-label="View details: AI-Based Hospital Resource Prediction and Ambulance Route Optimization System">
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/15">Healthcare AI</span>
+                <span class="text-[10px] font-bold text-emerald-400">95% Accuracy</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">AI-Based Hospital Resource Prediction &amp; Ambulance Route Optimization System</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Predicts hospital resource demands and optimizes ambulance routing to reduce emergency response times using machine learning.</p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Machine Learning</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Scikit-learn</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Python</span>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-purple-900/15 flex items-center justify-between text-[11px] font-semibold">
+              <span class="text-gray-500">30% Faster Response</span>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/gowthamaiml07/AI-BASED-HOSPITAL-RESOURCE-PREDICTION-AND-AMBULANCE-ROUTE-OPTIMIZATION-SYSTEM" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all flex items-center gap-1" title="View Source Code on GitHub" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github text-xs"></i>
+                </a>
+                <span class="text-purple-400 flex items-center gap-1">View Details <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (2nd Place): OmniBrain Multi-Modal & Self-RAG -->
+          <div class="reveal project-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" data-category="multimodal" onclick="openProjectModal('project4')" role="button" tabindex="0" aria-label="View details: OmniBrain Multi-Modal Vision-Language and Self-RAG AI System">
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/15">Multi-Modal &amp; RAG</span>
+                <span class="text-[10px] font-bold text-amber-400">VLM + Self-RAG</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">OmniBrain — Multi-Modal Vision-Language &amp; Self-RAG AI System</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Extracts and reasons over visual charts &amp; graphs in documents using Vision-Language Models (GPT-4o/LLaVA) and self-correcting LangGraph Self-RAG loops.</p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Vision-Language Model</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">LangGraph</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Self-RAG</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">PyMuPDF</span>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-purple-900/15 flex items-center justify-between text-[11px] font-semibold">
+              <span class="text-gray-500">Zero-Hallucination Loop</span>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/gowthamaiml07/-OmniBrain-" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all flex items-center gap-1" title="View Source Code on GitHub" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github text-xs"></i>
+                </a>
+                <span class="text-purple-400 flex items-center gap-1">View Details <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (3rd Place): Fake Detection -->
+          <div class="reveal project-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" data-category="cv" onclick="openProjectModal('project2')" role="button" tabindex="0" aria-label="View details: AI-Powered Fake Detection System">
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/15">Computer Vision</span>
+                <span class="text-[10px] font-bold text-purple-400">98% Accuracy</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">AI-Powered Fake Detection System</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Deep learning pipeline that detects fake images and videos with high accuracy using CNN architectures.</p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Deep Learning</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">CNN</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">TensorFlow / OpenCV</span>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-purple-900/15 flex items-center justify-between text-[11px] font-semibold">
+              <span class="text-gray-500">98% Detection Accuracy</span>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/gowthamaiml07/AI-FAKE-DE" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all flex items-center gap-1" title="View Source Code on GitHub" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github text-xs"></i>
+                </a>
+                <span class="text-purple-400 flex items-center gap-1">View Details <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (4th Place): Drowsiness Detection -->
+          <div class="reveal project-card glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" data-category="cv" onclick="openProjectModal('project3')" role="button" tabindex="0" aria-label="View details: AI-Based Drowsiness Detection System">
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/15">Safety &amp; CV</span>
+                <span class="text-[10px] font-bold text-indigo-400">98% Detection</span>
+              </div>
+              <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">AI-Based Drowsiness Detection System</h3>
+              <p class="text-xs text-gray-400 leading-relaxed">Real-time driver drowsiness detection using computer vision and OpenCV, triggering alerts to prevent accidents.</p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Computer Vision</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">OpenCV</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Real-Time AI</span>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-purple-900/15 flex items-center justify-between text-[11px] font-semibold">
+              <span class="text-gray-500">Real-Time Alerts</span>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/gowthamaiml07/AI-Based-Drowsiness-Detection-System" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all flex items-center gap-1" title="View Source Code on GitHub" aria-label="GitHub Repository">
+                  <i class="fa-brands fa-github text-xs"></i>
+                </a>
+                <span class="text-purple-400 flex items-center gap-1">View Details <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section id="skills" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-microchip"></i> Capabilities
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Technical Skills</h2>
+          <p class="text-sm text-gray-500 mt-3">Organized across AI/ML workflows, programming, and developer tooling.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Domains & ML -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-purple-500/15 flex items-center justify-center text-purple-400 text-sm"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="text-sm font-bold text-white">Domains &amp; ML</h3>
+            <ul class="space-y-1.5 text-xs text-gray-400">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-purple-400 flex-shrink-0"></span>Artificial Intelligence / ML</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-purple-400 flex-shrink-0"></span>Computer Vision</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-purple-400 flex-shrink-0"></span>Neural Networks &amp; Deep Learning</li>
+            </ul>
+          </div>
+
+          <!-- Programming -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/15 flex items-center justify-center text-indigo-400 text-sm"><i class="fa-solid fa-code"></i></div>
+            <h3 class="text-sm font-bold text-white">Programming</h3>
+            <ul class="space-y-1.5 text-xs text-gray-400">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-indigo-400 flex-shrink-0"></span>Python</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-indigo-400 flex-shrink-0"></span>Java</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-indigo-400 flex-shrink-0"></span>C</li>
+            </ul>
+          </div>
+
+          <!-- Libraries & Frameworks -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-400 text-sm"><i class="fa-solid fa-layer-group"></i></div>
+            <h3 class="text-sm font-bold text-white">Libraries &amp; Frameworks</h3>
+            <ul class="space-y-1.5 text-xs text-gray-400">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0"></span>Scikit-learn, Pandas, NumPy</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0"></span>TensorFlow &amp; PyTorch</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-emerald-400 flex-shrink-0"></span>OpenCV</li>
+            </ul>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-pink-500/15 flex items-center justify-center text-pink-400 text-sm"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3 class="text-sm font-bold text-white">Developer Tools</h3>
+            <ul class="space-y-1.5 text-xs text-gray-400">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-pink-400 flex-shrink-0"></span>VS Code &amp; Google Colab</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-pink-400 flex-shrink-0"></span>Jupyter Notebook, Git &amp; GitHub</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-pink-400 flex-shrink-0"></span>Google AI Studio</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+          <!-- Soft Skills -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-sky-500/15 flex items-center justify-center text-sky-400 text-sm"><i class="fa-solid fa-users"></i></div>
+            <h3 class="text-sm font-bold text-white">Soft Skills</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">Team Collaboration, Communication, Problem Solving, Critical Thinking, and Quick Learner.</p>
+          </div>
+          <!-- Languages Known -->
+          <div class="reveal glass-card p-5 rounded-2xl space-y-3">
+            <div class="w-9 h-9 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-400 text-sm"><i class="fa-solid fa-language"></i></div>
+            <h3 class="text-sm font-bold text-white">Languages Known</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">English and Tamil.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <section id="experience" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-briefcase"></i> Work
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-10">Experience</h2>
+        </div>
+
+        <div class="relative pl-6 border-l-2 border-purple-900/40 space-y-8">
+          <div class="reveal relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-purple-500 border-[3px] border-black" aria-hidden="true"></div>
+            <div class="glass-card p-6 rounded-2xl space-y-2">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h3 class="text-base font-bold text-white">Machine Learning Intern</h3>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-purple-500/15 text-purple-300">Dec 2024 – Jan 2025</span>
+              </div>
+              <p class="text-sm font-semibold text-purple-400">Prinston Smart Engineers</p>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Designed and trained ML models on real-world datasets using Scikit-learn, Pandas, and NumPy, achieving reliable classification performance across 3+ datasets with end-to-end model evaluation.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Python</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Scikit-learn</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Pandas / NumPy</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-[10px] text-gray-400">Model Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION ================= -->
+      <section id="education" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-graduation-cap"></i> Education
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-10">Education</h2>
+        </div>
+
+        <div class="space-y-6">
+          <div class="reveal glass-card p-7 rounded-2xl max-w-2xl">
+            <div class="flex items-start justify-between flex-wrap gap-3">
+              <div class="space-y-1">
+                <h3 class="text-lg font-bold text-white">B.E. Computer Science &amp; Engineering (AIML)</h3>
+                <p class="text-sm font-semibold text-purple-400">Velalar College of Engineering and Technology, Erode</p>
+                <p class="text-xs text-gray-400">2023 – 2027 &bull; Affiliated to Anna University</p>
+              </div>
+              <div class="px-4 py-2 rounded-xl bg-purple-500/10 border border-purple-500/20 text-center">
+                <div class="text-xl font-extrabold text-white">7.94</div>
+                <div class="text-[10px] text-purple-300 font-medium">CGPA / 10</div>
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-purple-900/15">
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Specializing in Artificial Intelligence and Machine Learning.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal glass-card p-6 rounded-2xl max-w-2xl">
+            <div class="flex items-start justify-between flex-wrap gap-3">
+              <div class="space-y-1">
+                <h3 class="text-base font-bold text-white">HSC — Higher Secondary</h3>
+                <p class="text-sm font-semibold text-purple-400">HINDU Higher Secondary School, Vaniyambadi, Tirupattur</p>
+                <p class="text-xs text-gray-400">Completed 2023</p>
+              </div>
+              <div class="px-4 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-center">
+                <div class="text-xl font-extrabold text-white">64.5%</div>
+                <div class="text-[10px] text-emerald-300 font-medium">Percentage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ACHIEVEMENTS ================= -->
+      <section id="achievements" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-award"></i> Recognition
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-10">Achievements &amp; Awards</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div class="reveal glass-card p-6 rounded-2xl border-amber-500/25 hover:border-amber-400/40 space-y-3 lg:col-span-3">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 text-lg flex-shrink-0"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">1st Prize Winner — 2025</span>
+                <p class="text-xs text-gray-500">IDE Bootcamp 2025, Bootcamp Edition 2 (Phase II)</p>
+              </div>
+            </div>
+            <h3 class="text-sm font-bold text-white">National-level Idea Pitching Competition</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Secured 1st Prize in the national-level Innovation, Design and Entrepreneurship idea pitching competition organized by AICTE &amp; MIC at GLA University, Mathura.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORKSHOPS & EVENTS ================= -->
+      <section id="workshops" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-chalkboard"></i> Events
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Workshops &amp; Technical Events</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="reveal glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-emerald-500/15 flex items-center justify-center text-emerald-400 text-lg"><i class="fa-solid fa-leaf"></i></div>
+            <h3 class="text-sm font-bold text-white">AI &amp; ML in Farm Machinery Workshop</h3>
+            <p class="text-[10px] text-purple-400 font-semibold">SYNECT '24</p>
+            <p class="text-xs text-gray-400 leading-relaxed">Nandha Engineering College — Learned AI/ML application in agriculture technology.</p>
+          </div>
+
+          <div class="reveal glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 flex items-center justify-center text-indigo-400 text-lg"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="text-sm font-bold text-white">Engineer VRO Technical Event</h3>
+            <p class="text-[10px] text-purple-400 font-semibold">TECH MELANCE '24</p>
+            <p class="text-xs text-gray-400 leading-relaxed">Bannari Amman Institute of Technology — Showcased engineering problem-solving in a technical competition.</p>
+          </div>
+
+          <div class="reveal glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-purple-500/15 flex items-center justify-center text-purple-400 text-lg"><i class="fa-solid fa-code"></i></div>
+            <h3 class="text-sm font-bold text-white">LangChain in Action: Develop LLM-Powered Applications</h3>
+            <p class="text-[10px] text-purple-400 font-semibold">Udemy &bull; 2026</p>
+            <p class="text-xs text-gray-400 leading-relaxed">Hands-on course on building LLM-powered applications with LangChain.</p>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">LangChain</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">LLM</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">Prompt Optimization</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">AI Application Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICATIONS ================= -->
+      <section id="certifications" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-certificate"></i> Credentials
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Certifications</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="reveal glass-card p-6 rounded-2xl space-y-3 hover:-translate-y-0.5 transition-transform">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-robot text-purple-400 text-sm"></i>
+              <span class="text-[10px] font-bold text-purple-400 uppercase">Simplilearn &bull; 2025</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Prompt Engineering: Introduction to Prompt Engineering</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">Prompt optimization for ChatGPT and LLMs, covering effective AI model interaction techniques.</p>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">ChatGPT</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">LLMs</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">Prompt Optimization</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">AI Model Interaction</span>
+            </div>
+          </div>
+
+          <div class="reveal glass-card p-6 rounded-2xl space-y-3 hover:-translate-y-0.5 transition-transform">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-brain text-purple-400 text-sm"></i>
+              <span class="text-[10px] font-bold text-purple-400 uppercase">TCS iON Career Edge &bull; 2026</span>
+            </div>
+            <h3 class="text-sm font-bold text-white">Generative AI Essentials</h3>
+            <p class="text-xs text-gray-400 leading-relaxed">Foundations of Generative AI covering ML concepts, prompt engineering, and ethical AI practices.</p>
+            <div class="flex flex-wrap gap-1 pt-1">
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">Generative AI</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">ML</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">Prompt Engineering</span>
+              <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 text-[10px]">Ethical AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal glass-card rounded-3xl p-8 sm:p-12 border border-purple-500/20 relative overflow-hidden">
+          <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- Left -->
+            <div class="space-y-5">
+              <div class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-paper-plane"></i> Get in Touch
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Let’s Connect &amp;<br /><span class="gradient-purple">Build Together.</span>
+              </h2>
+              <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                Open to AI/ML job opportunities, collaborations, and opportunities to grow and contribute to real-world AI projects.
+              </p>
+              <div class="flex flex-wrap gap-3 pt-1">
+                <a href="mailto:gowtham.aiml07@gmail.com" class="px-5 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/25 transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-envelope"></i> Send Email
+                </a>
+                <a href="tel:+917092882250" class="px-5 py-3 rounded-xl glass-card hover:bg-purple-900/20 text-white font-semibold text-sm transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-purple-400"></i> +91 7092882250
+                </a>
+              </div>
+              <div class="flex gap-3 pt-1">
+                <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            <!-- Right: Contact Form (serverless email delivery) -->
+            <div>
+              <form id="contactForm" class="glass-card relative p-6 rounded-2xl space-y-3" novalidate>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Send a Quick Note</h4>
+
+                <div id="contactFormStatus" class="hidden text-[11px] rounded-lg px-3 py-2.5 border" role="status" aria-live="polite"></div>
+
+                <div>
+                  <label for="contact-name" class="block text-[11px] font-semibold text-gray-400 mb-1.5">Your Name</label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="John Doe" aria-describedby="contact-name-error" class="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-purple-900/30 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors" />
+                  <p id="contact-name-error" class="text-[10px] text-red-400 mt-1 hidden" role="alert"></p>
+                </div>
+
+                <div>
+                  <label for="contact-email" class="block text-[11px] font-semibold text-gray-400 mb-1.5">Your Email</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="john@example.com" aria-describedby="contact-email-error" class="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-purple-900/30 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors" />
+                  <p id="contact-email-error" class="text-[10px] text-red-400 mt-1 hidden" role="alert"></p>
+                </div>
+
+                <div>
+                  <label for="contact-message" class="block text-[11px] font-semibold text-gray-400 mb-1.5">Message</label>
+                  <textarea id="contact-message" name="message" rows="4" required minlength="10" maxlength="5000" placeholder="Tell me about the opportunity, role, or in this project..." aria-describedby="contact-message-error" class="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-purple-900/30 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors resize-none"></textarea>
+                  <p id="contact-message-error" class="text-[10px] text-red-400 mt-1 hidden" role="alert"></p>
+                </div>
+
+                <!-- Honeypot anti-spam field (hidden from humans, filled by bots) -->
+                <input type="text" name="website" id="contact-website" tabindex="-1" autocomplete="off" aria-hidden="true" class="contact-honeypot" />
+
+                <button type="submit" id="contactSubmit" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 disabled:from-zinc-700 disabled:to-zinc-700 disabled:text-zinc-400 disabled:cursor-wait text-white font-semibold text-xs shadow-lg shadow-purple-600/20 transition-all flex items-center justify-center gap-2">
+                  <i id="contactSubmitIcon" class="fa-solid fa-paper-plane"></i>
+                  <span id="contactSubmitLabel">Send Message</span>
+                </button>
+
+                <p class="text-[10px] text-gray-500 text-center">
+                  Prefer email? <a href="mailto:gowtham.aiml07@gmail.com" class="text-purple-400 hover:text-purple-300 underline underline-offset-2">gowtham.aiml07@gmail.com</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-purple-900/15 py-8 mt-auto">
+      <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+        <p>&copy; <span id="currentYear"></span> Gowtham B. Built with precision.</p>
+        <div class="flex items-center gap-5">
+          <a href="gowtham_resume.pdf" download="Gowtham's CV.pdf" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1 transition-colors"><i class="fa-solid fa-download text-[10px]"></i> Download CV</a>
+          <a href="#hero" class="hover:text-purple-400 transition-colors">Top</a>
+          <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">GitHub</a>
+          <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition-colors">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /Content Wrapper -->
+
+  <!-- ================= PROJECT DETAIL MODAL ================= -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay absolute inset-0" onclick="closeProjectModal()"></div>
+    <div class="relative z-10 max-w-2xl mx-auto mt-16 mb-8 mx-4 sm:mx-auto max-h-[calc(100vh-8rem)] overflow-y-auto rounded-2xl bg-[#0c0a16] border border-purple-500/20 shadow-2xl">
+      <div class="sticky top-0 flex items-center justify-between p-5 border-b border-purple-900/20 bg-[#0c0a16]/95 backdrop-blur-sm rounded-t-2xl z-10">
+        <h3 id="modalTitle" class="text-base font-bold text-white pr-8"></h3>
+        <button onclick="closeProjectModal()" class="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" aria-label="Close modal">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+      <div id="modalContent" class="p-6 space-y-5"></div>
+    </div>
+  </div>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 left-6 z-40 w-10 h-10 rounded-xl bg-purple-600/80 hover:bg-purple-500 text-white shadow-lg shadow-purple-600/20 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up text-sm"></i>
+  </button>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    // --- Project Data ---
+    const projectData = {
+      project1: {
+        title: 'AI-Based Hospital Resource Prediction & Ambulance Route Optimization System',
+        category: 'Healthcare AI',
+        problem: 'Hospitals need accurate resource demand forecasting and optimized ambulance routing to reduce emergency response times under real-time conditions.',
+        approach: 'Developed an AI-based system using machine learning to predict hospital resource demand and optimize ambulance routing in real time.',
+        pipeline: ['Historical Data', 'Feature Engineering', 'ML Prediction', 'Resource Planning', 'Route Optimization', 'Emergency Dispatch'],
+        tech: ['Python', 'Machine Learning', 'Scikit-learn', 'Pandas', 'NumPy'],
+        results: 'Achieved 95% prediction accuracy and reduced average emergency response time by 30%.',
+        challenges: 'Maintaining prediction reliability with real-world variability in hospital demand and routing conditions.',
+        future: 'Extend modeling to broader healthcare resource planning scenarios.',
+        githubUrl: 'https://github.com/gowthamaiml07/AI-BASED-HOSPITAL-RESOURCE-PREDICTION-AND-AMBULANCE-ROUTE-OPTIMIZATION-SYSTEM'
+      },
+      project2: {
+        title: 'AI-Powered Fake Detection System',
+        category: 'Computer Vision',
+        problem: 'Fake images and videos are increasingly difficult to distinguish from genuine content, creating risks to information integrity.',
+        approach: 'Designed an AI-based system capable of detecting fake images and videos using machine learning.',
+        pipeline: ['Input Media', 'Preprocessing', 'Feature Extraction', 'ML Classification', 'Confidence Scoring', 'Detection Result'],
+        tech: ['Python', 'Machine Learning', 'Computer Vision', 'Deep Learning', 'CNN', 'TensorFlow', 'OpenCV'],
+        results: 'Achieved 98% detection accuracy.',
+        challenges: 'Adapting detection to varied image and video content while maintaining accuracy.',
+        future: 'Explore enhancements to keep detection robust across emerging media formats.',
+        githubUrl: 'https://github.com/gowthamaiml07/AI-FAKE-DE'
+      },
+      project3: {
+        title: 'AI-Based Drowsiness Detection System',
+        category: 'Computer Vision & Safety',
+        problem: 'Driver drowsiness is a leading cause of road accidents, and reliable real-time detection can improve road safety.',
+        approach: 'Built an intelligent model to detect driver drowsiness in real time using computer vision and alert mechanisms to improve road safety.',
+        pipeline: ['Camera Feed', 'Preprocessing', 'Feature Extraction', 'Drowsiness Classification', 'Alert Mechanism'],
+        tech: ['Python', 'Computer Vision', 'OpenCV', 'Machine Learning', 'Deep Learning'],
+        results: 'Achieved 98% detection rate.',
+        challenges: 'Ensuring consistent real-time detection across varying driving and lighting conditions.',
+        future: 'Continue improving real-time performance and alert reliability.',
+        githubUrl: 'https://github.com/gowthamaiml07/AI-Based-Drowsiness-Detection-System'
+      },
+      project4: {
+        title: 'OmniBrain — Multi-Modal Vision-Language & Self-RAG AI System',
+        category: 'Multi-Modal AI & RAG',
+        problem: 'Complex document understanding requires extracting, reasoning over, and verifying embedded visual charts, graphs, and tables while eliminating retrieval hallucinations.',
+        approach: 'Engineered a multi-modal AI system combining Vision-Language Models (VLM) for visual document parsing with a self-correcting LangGraph Self-RAG state machine.',
+        pipeline: ['PDF & Visual Ingestion', 'PyMuPDF Page Rendering', 'VLM Structured JSON Extraction', 'In-Memory Semantic Retrieval', 'LangGraph Self-RAG Loop', 'Hallucination Check'],
+        tech: ['Python', 'Vision-Language Models (VLM)', 'LangGraph', 'Self-RAG', 'PyMuPDF', 'Gemini AI', 'OpenAI'],
+        results: 'Automated structured visual document extraction and query rewriting loop, eliminating document retrieval hallucinations.',
+        challenges: 'Handling complex multi-page chart layouts and managing state transitions in the LangGraph Self-RAG loop.',
+        future: 'Expand vector database integration and enable real-time streaming VLM responses.',
+        githubUrl: 'https://github.com/gowthamaiml07/-OmniBrain-'
+      }
+    };
+
+    // --- Toast ---
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      const m = document.getElementById('toastMsg');
+      m.textContent = msg;
+      t.classList.remove('translate-y-24', 'opacity-0');
+      t.classList.add('translate-y-0', 'opacity-100');
+      clearTimeout(t._timeout);
+      t._timeout = setTimeout(() => {
+        t.classList.add('translate-y-24', 'opacity-0');
+        t.classList.remove('translate-y-0', 'opacity-100');
+      }, 3000);
+    }
+
+    // --- Copy Email ---
+    function copyEmail() {
+      const email = 'gowtham.aiml07@gmail.com';
+      const btn = document.getElementById('copyBtnText');
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).then(() => {
+          if (btn) btn.textContent = 'Copied!';
+          showToast('Email address copied to clipboard.');
+          setTimeout(() => { if (btn) btn.textContent = 'Copy Email'; }, 3000);
+        }).catch(() => fallbackCopy(email, btn));
+      } else {
+        fallbackCopy(email, btn);
+      }
+    }
+    function fallbackCopy(text, btn) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        if (btn) btn.textContent = 'Copied!';
+        showToast('Email address copied to clipboard.');
+        setTimeout(() => { if (btn) btn.textContent = 'Copy Email'; }, 3000);
+      } catch (e) {
+        showToast('Could not copy. Email: ' + text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    // --- Project Filter ---
+    function filterProjects(cat) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        const isActive = b.dataset.cat === cat;
+        b.className = isActive
+          ? 'filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-purple-600 text-white transition-all'
+          : 'filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all';
+        b.setAttribute('aria-selected', isActive);
+      });
+      document.querySelectorAll('.project-card').forEach(c => {
+        const show = cat === 'all' || c.dataset.category === cat;
+        c.style.display = show ? '' : 'none';
+      });
+    }
+
+    // --- Project Modal ---
+    function openProjectModal(id) {
+      const p = projectData[id];
+      if (!p) return;
+      document.getElementById('modalTitle').textContent = p.title;
+
+      let pipelineHTML = p.pipeline.map((step, i) => `
+        <div class="flex items-center gap-2 text-[11px]">
+          <span class="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-300 font-bold flex-shrink-0">${i + 1}</span>
+          <span class="text-gray-300">${step}</span>
+          ${i < p.pipeline.length - 1 ? '' : ''}
+        </div>
+      `).join('');
+
+      let techHTML = p.tech.map(t => `<span class="px-2.5 py-1 rounded-lg bg-white/5 text-[11px] text-gray-300 border border-white/5">${t}</span>`).join('');
+
+      document.getElementById('modalContent').innerHTML = `
+        <div>
+          <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-purple-500/15 text-purple-300 border border-purple-500/20">${p.category}</span>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Problem</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">${p.problem}</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Approach</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">${p.approach}</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Pipeline</h4>
+          <div class="glass-card p-4 rounded-xl space-y-2">${pipelineHTML}</div>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">${techHTML}</div>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Results</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">${p.results}</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Challenges</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">${p.challenges}</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold text-purple-400 uppercase tracking-wider">Future Improvements</h4>
+          <p class="text-xs text-gray-400 leading-relaxed">${p.future}</p>
+        </div>
+        <div class="pt-3 border-t border-purple-900/20 flex gap-3">
+          <a href="${p.githubUrl || 'https://github.com/gowthamaiml07'}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-xs font-medium transition-all flex items-center gap-2 shadow-lg shadow-purple-600/20">
+            <i class="fa-brands fa-github"></i> View Project on GitHub
+          </a>
+        </div>
+      `;
+
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      modal.querySelector('button[aria-label="Close modal"]').focus();
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !document.getElementById('projectModal').classList.contains('hidden')) {
+        closeProjectModal();
+      }
+    });
+
+    // --- Mobile Menu ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('open');
+        mobileMenu.classList.toggle('open');
+        mobileMenuBtn.setAttribute('aria-expanded', !isOpen);
+        mobileMenuIcon.className = isOpen ? 'fa-solid fa-bars text-base' : 'fa-solid fa-xmark text-base';
+      });
+
+      mobileMenu.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          mobileMenuIcon.className = 'fa-solid fa-bars text-base';
+        });
+      });
+    }
+
+    // --- Scroll Progress ---
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+      document.getElementById('scrollProgress').style.transform = `scaleX(${progress})`;
+
+      // Back to top
+      const btt = document.getElementById('backToTop');
+      if (scrollTop > 500) {
+        btt.style.opacity = '1';
+        btt.style.pointerEvents = 'auto';
+      } else {
+        btt.style.opacity = '0';
+        btt.style.pointerEvents = 'none';
+      }
+    });
+
+    // --- Active Nav ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateActiveNav() {
+      let current = '';
+      sections.forEach(s => {
+        const top = s.offsetTop - 120;
+        if (window.scrollY >= top) current = s.getAttribute('id');
+      });
+      navLinks.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateActiveNav);
+
+    // --- Scroll Reveal ---
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // --- Footer Year ---
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // --- Contact Form (real email delivery via serverless endpoint) ---
+    (function () {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      let submitting = false;
+
+      const STATUS_CLASSES = {
+        info: 'border-purple-500/30 bg-purple-500/10 text-purple-300',
+        success: 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300',
+        error: 'border-red-500/30 bg-red-500/10 text-red-300'
+      };
+
+      const validators = {
+        name: function (v) {
+          if (!v) return 'Please enter your name.';
+          if (v.length > 100) return 'Name must be under 100 characters.';
+          return '';
+        },
+        email: function (v) {
+          if (!v) return 'Please enter your email.';
+          if (v.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return 'Please enter a valid email address.';
+          return '';
+        },
+        message: function (v) {
+          if (!v) return 'Please enter a message.';
+          if (v.length < 10) return 'Message must be at least 10 characters.';
+          if (v.length > 5000) return 'Message must be under 5000 characters.';
+          return '';
+        }
+      };
+
+      function setStatus(el, type, msg) {
+        el.hidden = false;
+        el.className = 'text-[11px] rounded-lg px-3 py-2.5 border ' + STATUS_CLASSES[type];
+        el.setAttribute('role', type === 'error' ? 'alert' : 'status');
+        el.textContent = msg;
+      }
+
+      function showFieldError(name, msg) {
+        const el = document.getElementById('contact-' + name);
+        const errEl = document.getElementById('contact-' + name + '-error');
+        if (el) { el.classList.add('input-invalid'); el.setAttribute('aria-invalid', 'true'); }
+        if (errEl) { errEl.textContent = msg; errEl.classList.remove('hidden'); }
+      }
+
+      function clearFieldError(name) {
+        const el = document.getElementById('contact-' + name);
+        const errEl = document.getElementById('contact-' + name + '-error');
+        if (el) { el.classList.remove('input-invalid'); el.removeAttribute('aria-invalid'); }
+        if (errEl) { errEl.textContent = ''; errEl.classList.add('hidden'); }
+      }
+
+      ['name', 'email', 'message'].forEach(function (n) {
+        const el = document.getElementById('contact-' + n);
+        if (el) el.addEventListener('input', function () { clearFieldError(n); });
+      });
+
+      // Attempt the Netlify endpoint first, fall back to the Vercel one.
+      // 404/405 => endpoint does not exist on this host (pure static host).
+      async function deliverMessage(payload) {
+        const endpoints = ['/.netlify/functions/contact', '/api/contact'];
+        let last = null;
+
+        for (const endpoint of endpoints) {
+          const ctrl = new AbortController();
+          const timer = setTimeout(function () { ctrl.abort(); }, 15000);
+          try {
+            const res = await fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+              signal: ctrl.signal
+            });
+            clearTimeout(timer);
+
+            if (res.status === 404 || res.status === 405) { last = { status: res.status }; continue; }
+
+            let data = null;
+            try { data = await res.json(); } catch (err) { /* non-JSON body */ }
+
+            if (res.ok) return data || { success: true };
+
+            const e = new Error((data && data.error) || 'Request failed.');
+            e.status = res.status;
+            e.serverMessage = data && data.error;
+            throw e;
+          } catch (err) {
+            clearTimeout(timer);
+            if (err && err.name === 'AbortError') { last = { status: 'timeout' }; break; }
+            if (err && err.name === 'TypeError') { last = err; break; } // network unreachable
+            last = err;
+          }
+        }
+
+        const e2 = new Error('Unable to deliver message.');
+        e2.status = last && last.status;
+        e2.serverMessage = last && last.serverMessage;
+        if (e2.status === 404) e2.config = true;
+        throw e2;
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (submitting) return;
+
+        const statusEl = document.getElementById('contactFormStatus');
+        const submitBtn = document.getElementById('contactSubmit');
+        const submitLabel = document.getElementById('contactSubmitLabel');
+        const submitIcon = document.getElementById('contactSubmitIcon');
+
+        // Client-side validation
+        let firstInvalid = null;
+        for (const name of ['name', 'email', 'message']) {
+          const val = document.getElementById('contact-' + name).value.trim();
+          const msg = validators[name](val);
+          if (msg) {
+            showFieldError(name, msg);
+            if (!firstInvalid) firstInvalid = document.getElementById('contact-' + name);
+          } else {
+            clearFieldError(name);
+          }
+        }
+        if (firstInvalid) { firstInvalid.focus(); return; }
+
+        const payload = {
+          name: document.getElementById('contact-name').value.trim(),
+          email: document.getElementById('contact-email').value.trim(),
+          message: document.getElementById('contact-message').value.trim(),
+          website: document.getElementById('contact-website').value.trim()
+        };
+
+        submitting = true;
+        submitBtn.disabled = true;
+        submitBtn.setAttribute('aria-disabled', 'true');
+        submitLabel.textContent = 'Sending...';
+        submitIcon.className = 'fa-solid fa-circle-notch fa-spin';
+        setStatus(statusEl, 'info', 'Sending your message...');
+
+        try {
+          await deliverMessage(payload);
+          setStatus(statusEl, 'success', "Message sent successfully! I'll get back to you soon.");
+          form.reset();
+        } catch (err) {
+          let msg = 'Something went wrong. Please try again or email me directly.';
+          if (err && err.serverMessage && /not configured/i.test(err.serverMessage)) {
+            msg = err.serverMessage;
+          } else if (err && err.config) {
+            msg = 'Contact service is not configured yet. Please email me directly at gowtham.aiml07@gmail.com.';
+          }
+          setStatus(statusEl, 'error', msg);
+        } finally {
+          submitting = false;
+          submitBtn.disabled = false;
+          submitBtn.removeAttribute('aria-disabled');
+          submitLabel.textContent = 'Send Message';
+          submitIcon.className = 'fa-solid fa-paper-plane';
+        }
+      });
+    })();
+
+    // --- Init ---
+    updateActiveNav();
+  </script>
+
+</body>
+</html>
