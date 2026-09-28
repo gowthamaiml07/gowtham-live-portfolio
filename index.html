@@ -245,10 +245,76 @@
     .input-invalid {
       border-color: rgba(248, 113, 113, 0.6) !important;
     }
+
+    body.theme-light {
+      background: #ffffff;
+      color: #1f2937;
+    }
+    body.theme-light #pageBackground {
+      background-image:
+        linear-gradient(45deg, transparent 49%, #e5e7eb 49%, #e5e7eb 51%, transparent 51%),
+        linear-gradient(-45deg, transparent 49%, #e5e7eb 49%, #e5e7eb 51%, transparent 51%);
+      background-size: 40px 40px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%);
+      mask-image: radial-gradient(ellipse 80% 80% at 100% 0%, #000 50%, transparent 90%);
+    }
+    body.theme-light .text-white { color: #111827 !important; }
+    body.theme-light .text-gray-200 { color: #374151 !important; }
+    body.theme-light .text-gray-300,
+    body.theme-light .text-gray-400 { color: #4b5563 !important; }
+    body.theme-light .text-gray-500,
+    body.theme-light .text-gray-600 { color: #6b7280 !important; }
+    body.theme-light .text-purple-200,
+    body.theme-light .text-purple-300 { color: #6b21a8 !important; }
+    body.theme-light .text-purple-400 { color: #7c3aed !important; }
+    body.theme-light .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(107, 114, 128, 0.2);
+      box-shadow: 0 8px 24px -18px rgba(31, 41, 55, 0.35);
+    }
+    body.theme-light header {
+      background-color: rgba(255, 255, 255, 0.86);
+      border-color: rgba(107, 114, 128, 0.2);
+    }
+    body.theme-light #mobileMenu {
+      background-color: rgba(255, 255, 255, 0.98);
+    }
+    body.theme-light [class~="bg-black/40"] {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    body.theme-light [class~="bg-black/60"],
+    body.theme-light [class~="bg-black/95"] {
+      background-color: rgba(255, 255, 255, 0.88);
+    }
+    body.theme-light [class~="bg-white/5"],
+    body.theme-light [class~="bg-white/10"] {
+      background-color: rgba(31, 41, 55, 0.06);
+    }
+    body.theme-light [class*="border-white/"],
+    body.theme-light [class*="border-purple-900/"] {
+      border-color: rgba(107, 114, 128, 0.22) !important;
+    }
+    body.theme-light .bg-purple-600.text-white,
+    body.theme-light .bg-purple-500.text-white,
+    body.theme-light .bg-gradient-to-r.text-white,
+    body.theme-light .bg-gradient-to-tr.text-white,
+    body.theme-light #toast .text-white,
+    body.theme-light #projectModal .text-white,
+    body.theme-light #hero .group .text-white {
+      color: #ffffff !important;
+    }
+    body.theme-light #projectModal > div:last-child,
+    body.theme-light #projectModal > div:last-child > div:first-child {
+      color: #f9fafb;
+    }
+    body.theme-light .gradient-text {
+      background-image: linear-gradient(135deg, #111827 25%, #7c3aed 65%, #4f46e5 100%);
+    }
+    body.theme-light ::-webkit-scrollbar-track { background: #f3f4f6; }
   </style>
 </head>
 
-<body class="bg-black text-gray-200 font-sans selection:bg-purple-600 selection:text-white antialiased min-h-screen relative overflow-x-hidden">
+<body class="theme-light bg-white text-gray-800 font-sans selection:bg-purple-600 selection:text-white antialiased min-h-screen relative overflow-x-hidden">
 
   <!-- Skip to Content -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -257,7 +323,7 @@
   <div id="scrollProgress" class="fixed top-0 left-0 w-full h-[2px] bg-gradient-to-r from-purple-500 via-violet-400 to-indigo-500 z-50" aria-hidden="true"></div>
 
   <!-- Background -->
-  <div class="fixed inset-0 pointer-events-none z-0" style="background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(139, 92, 246, 0.18), transparent 65%), #000000;" aria-hidden="true"></div>
+  <div id="pageBackground" class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"></div>
 
   <!-- Toast -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-purple-950/90 border border-purple-500/40 backdrop-blur-xl text-white text-sm shadow-2xl" role="status" aria-live="polite">
