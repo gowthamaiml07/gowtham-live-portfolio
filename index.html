@@ -303,6 +303,24 @@
     body.theme-light #hero .group .text-white {
       color: #ffffff !important;
     }
+    body.theme-light .profile-caption {
+      background: rgba(255, 255, 255, 0.94);
+      border-color: rgba(107, 114, 128, 0.3);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.16);
+    }
+    body.theme-light #hero .profile-caption .profile-name,
+    body.theme-light #hero .profile-caption .profile-role {
+      color: #1f2937 !important;
+    }
+    body.theme-light .profile-social-link {
+      background-color: rgba(124, 58, 237, 0.12);
+      border: 1px solid rgba(91, 33, 182, 0.3);
+      color: #312e81 !important;
+    }
+    body.theme-light .profile-social-link:hover {
+      background-color: #6d28d9;
+      color: #ffffff !important;
+    }
     body.theme-light #projectModal > div:last-child,
     body.theme-light #projectModal > div:last-child > div:first-child {
       color: #f9fafb;
@@ -472,15 +490,15 @@
                   </div>
 
                   <!-- Bottom Info -->
-                  <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/60 backdrop-blur-md border border-white/5 text-left space-y-1">
+                  <div class="profile-caption absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-black/60 backdrop-blur-md border border-white/5 text-left space-y-1">
                     <div class="flex items-center justify-between">
-                      <h2 class="text-sm font-bold text-white">Gowtham B</h2>
+                      <h2 class="profile-name text-sm font-bold text-white">Gowtham B</h2>
                       <div class="flex gap-1.5">
-                        <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-md bg-purple-600/30 hover:bg-purple-600 flex items-center justify-center text-white text-[10px] transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-md bg-zinc-800/80 hover:bg-zinc-700 flex items-center justify-center text-white text-[10px] transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/gowtham-b-4bb5b8290" target="_blank" rel="noopener noreferrer" class="profile-social-link w-7 h-7 rounded-md flex items-center justify-center text-xs transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gowthamaiml07" target="_blank" rel="noopener noreferrer" class="profile-social-link w-7 h-7 rounded-md flex items-center justify-center text-xs transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                       </div>
                     </div>
-                    <p class="text-[10px] text-purple-300/80">CSE (AIML) Undergrad &bull; AI/ML Developer</p>
+                    <p class="profile-role text-[10px]">CSE (AIML) Undergrad &bull; AI/ML Developer</p>
                   </div>
                 </div>
               </div>
